@@ -3,11 +3,12 @@ import image from '../images/Lunch.png';
 import image2 from '../images/Dinner.png';
 import image3 from '../images/Dinner2.png';
 import image4 from '../images/TakeOut.png';
+import image5 from '../images/DessertMenu.png';
 import { Typography, Button, Box, Container, useTheme, useMediaQuery } from '@mui/material';
-import { Restaurant, RestaurantMenu, TakeoutDining, DinnerDining } from '@mui/icons-material';
+import { Restaurant, RestaurantMenu, TakeoutDining, DinnerDining, Cake } from '@mui/icons-material';
 
 export default function Menu() {
-  const [activeMenu, setActiveMenu] = useState('lunch');
+  const [activeMenu, setActiveMenu] = useState('lunch');  
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
@@ -33,6 +34,13 @@ export default function Menu() {
           >
             Our Menu
           </Typography>
+          <Box sx={{
+            width: '80px',
+            height: '4px',
+            background: 'linear-gradient(90deg, #cf2e2e, #a02323)',
+            margin: '0 auto 2rem',
+            borderRadius: '2px'
+          }} />
           <Typography 
             variant="h5" 
             sx={{ 
@@ -124,7 +132,7 @@ export default function Menu() {
               variant={activeMenu === 'takeout' ? 'contained' : 'outlined'}
               size="large"
               onClick={() => setActiveMenu('takeout')}
-              startIcon={<TakeoutDining />}
+              startIcon={<DinnerDining />}
               sx={{
                 bgcolor: activeMenu === 'takeout' ? '#cf2e2e' : 'transparent',
                 color: activeMenu === 'takeout' ? 'white' : '#cf2e2e',
@@ -145,9 +153,35 @@ export default function Menu() {
                 fontWeight: 600
               }}
             >
-              Take-Out Menu
+              Family-Style Menu
             </Button>
-          
+            <Button
+              variant={activeMenu === 'dessert' ? 'contained' : 'outlined'}
+              size="large"
+              onClick={() => setActiveMenu('dessert')}
+              startIcon={<Cake />}
+              sx={{
+                bgcolor: activeMenu === 'dessert' ? '#cf2e2e' : 'transparent',
+                color: activeMenu === 'dessert' ? 'white' : '#cf2e2e',
+                borderColor: '#cf2e2e',
+                '&:hover': {
+                  bgcolor: activeMenu === 'dessert' ? '#a02323' : 'rgba(207, 46, 46, 0.1)',
+                  transform: 'translateY(-2px)',
+                  boxShadow: activeMenu === 'dessert' ? '0 8px 25px rgba(207, 46, 46, 0.3)' : '0 4px 15px rgba(207, 46, 46, 0.2)'
+                },  
+                px: { xs: 3, md: 4 },
+                py: { xs: 2, md: 2 },
+                fontSize: { xs: '0.95rem', sm: '1rem', md: '1.1rem' },
+                minWidth: { xs: '100%', sm: '200px' },
+                fontFamily: 'Open Sans, sans-serif',
+                minHeight: 48,
+                borderRadius: 3,
+                transition: 'all 0.3s ease',
+                fontWeight: 600
+              }}
+            >
+              Dessert Menu
+            </Button>
           </Box>
         </Box>
 
@@ -269,46 +303,34 @@ export default function Menu() {
             </Box>
           )}
 
-          {activeMenu === 'Daily Specials' && (
-            <Box sx={{ textAlign: 'center' }}>
+          {activeMenu === 'dessert' && (
+            <Box>
               <Typography 
                 variant="h2" 
                 sx={{ 
+                  textAlign: 'center', 
                   mb: { xs: 3, md: 4 },
-                  color: '#cf2e2e',
+                  color: '#cf2e2e',  
                   fontWeight: 'bold',
-                  fontFamily: 'Playfair Display, serif',
+                    fontFamily: 'Playfair Display, serif',
                   fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' }
                 }}
               >
-                Daily Specials
+                Dessert Menu
               </Typography>
-              <Typography 
-                variant="h5" 
-                sx={{ 
-                  color: '#666',
-                  fontFamily: 'Open Sans, sans-serif',
-                  fontSize: { xs: '1.1rem', md: '1.3rem' },
-                  mb: 3,
-                  lineHeight: 1.6
-                }}
-              >
-                Check with our staff for today's specials!
-              </Typography>
-              <Typography 
-                variant="body1" 
-                sx={{ 
-                  color: '#888',
-                  fontFamily: 'Open Sans, sans-serif',
-                  fontSize: { xs: '1rem', md: '1.1rem' },
-                  maxWidth: '500px',
-                  margin: '0 auto',
-                  lineHeight: 1.7
-                }}
-              >
-                Our chef creates unique daily specials featuring the freshest ingredients and seasonal flavors. 
-                Call us or ask your server about today's featured dishes.
-              </Typography>
+              <Box sx={{ textAlign: 'center' }}>
+                <img 
+                  src={image5} 
+                  alt="Dessert Menu" 
+                  style={{ 
+                    width: '100%', 
+                    height: 'auto', 
+                    maxWidth: '800px',
+                    borderRadius: 8,
+                    boxShadow: '0 4px 20px rgba(0,0,0,0.1)'
+                  }} 
+                />
+              </Box>
             </Box>
           )}
         </Box>

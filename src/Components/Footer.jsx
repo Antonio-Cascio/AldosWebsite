@@ -129,7 +129,7 @@ export default function Footer() {
                   fontWeight: 600,
                   fontSize: { xs: '0.85rem', md: '1rem' }
                 }}>
-                  Friday - Saturday: 11:00 AM - 11:00 PM
+                  Friday - Saturday: 11:30 AM - 11:00 PM
                 </Typography>
                 <Typography variant="body2" sx={{ 
                   mb: 2, 
@@ -283,7 +283,7 @@ export default function Footer() {
               fontFamily: 'Open Sans, sans-serif'
             }}
           >
-            Website Developed by <Link href="https://www.linkedin.com/in/antonio-cascio-4713a6327/" target="_blank" rel="noopener noreferrer" sx={{ color: 'rgba(255, 255, 255, 0.8)' }}>Antonio Cascio</Link>
+            Website Developed by <Link href="https://antoniocascio.netlify.app/" target="_blank" rel="noopener noreferrer" sx={{ color: 'rgba(255, 255, 255, 0.8)' }}>Antonio Cascio</Link>
           </Typography>
         </Box>
       </Container>

@@ -5,7 +5,7 @@ export default function About() {
     return (
         <Box sx={{ 
             minHeight: '100vh', 
-            backgroundColor: '#fafafa',
+            backgroundColor: '#eae9e9',
             py: 6
         }}>
             <Container maxWidth="lg">
@@ -24,6 +24,13 @@ export default function About() {
                     >
                         About Aldo's
                     </Typography>
+                    <Box sx={{
+            width: '80px',
+            height: '4px',
+            background: 'linear-gradient(90deg, #cf2e2e, #a02323)',
+            margin: '0 auto 2rem',
+            borderRadius: '2px'
+          }} />
                     <Typography 
                         variant="h5" 
                         sx={{ 

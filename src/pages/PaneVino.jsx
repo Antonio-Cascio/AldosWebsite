@@ -2,15 +2,22 @@ import { Button, Typography, Box, Container, useTheme, useMediaQuery } from '@mu
 import '../App.css';
 import { Link } from 'react-router-dom';
 import Winner from '../images/Winner.png';
-import holderimage1 from '../images/holderimage1.jpeg';
-import holderimage2 from '../images/holderimage2.png';
-import holderimage3 from '../images/holderimage3.png';
+import drink1 from '../images/drink1.png';
+import drink2 from '../images/drink2.png';
+import drink3 from '../images/drink3.png';
+
+
 import { useState, useEffect } from 'react';
 
 export default function PaneVino() {
     const [current, setCurrent] = useState(0);
     const [fade, setFade] = useState(true);
-    const images = [holderimage1, holderimage2, holderimage3];
+        const images = [drink1, drink2, drink3];
+    const drinkNames = [
+        "Margarita Italiana",
+        "Tiramisu Martini", 
+        "Chocolate Gelato Martini"
+    ];
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
@@ -22,9 +29,18 @@ export default function PaneVino() {
                 setFade(true);
             }, 500);
         }, 5000);
-
+        
         return () => clearInterval(interval);
-    }, [images.length]);
+    }, [images.length, current]); // Add current as dependency to reset timer
+
+    const handleImageChange = (newIndex) => {
+        setFade(false);
+        setTimeout(() => {
+            setCurrent(newIndex);
+            setFade(true);
+        }, 500);
+    };
+
     return (
         <Box sx={{ 
             minHeight: '100vh',
@@ -47,6 +63,13 @@ export default function PaneVino() {
                     >
                         Pane & Vino
                     </Typography>
+                    <Box sx={{
+            width: '80px',
+            height: '4px',
+            background: 'linear-gradient(90deg, #cf2e2e, #a02323)',
+            margin: '0 auto 2rem',
+            borderRadius: '2px'
+          }} />
                     
                     <Typography 
                         variant="h5" 
@@ -139,6 +162,7 @@ export default function PaneVino() {
                                 bgcolor: '#cf2e2e',
                                 '&:hover': {
                                     bgcolor: '#a02323',
+                                    color: 'white',
                                     transform: 'translateY(-3px)',
                                     boxShadow: '0 8px 25px rgba(207, 46, 46, 0.4)'
                                 },
@@ -171,6 +195,7 @@ export default function PaneVino() {
                                 bgcolor: '#333',
                                 '&:hover': {
                                     bgcolor: '#555',
+                                    color: 'white',
                                     transform: 'translateY(-3px)',
                                     boxShadow: '0 8px 25px rgba(0, 0, 0, 0.3)'
                                 },
@@ -203,6 +228,7 @@ export default function PaneVino() {
                                 bgcolor: '#8B4513',
                                 '&:hover': {
                                     bgcolor: '#A0522D',
+                                    color: 'white',
                                     transform: 'translateY(-3px)',
                                     boxShadow: '0 8px 25px rgba(139, 69, 19, 0.4)'
                                 },
@@ -224,6 +250,38 @@ export default function PaneVino() {
                             }}
                         >
                             View Cocktail Menu
+                        </Button> 
+                        <Button
+                            component={Link}
+                            to="/DessertDrinks"
+                            variant="contained"
+                            size="large"
+                            sx={{
+                                bgcolor: '#676767',
+                                '&:hover': {
+                                    bgcolor: '#555',
+                                    color: 'white',
+                                    transform: 'translateY(-3px)',
+                                    boxShadow: '0 8px 25px rgba(55, 55, 55, 0.3)'
+                                },
+                                '&:active': {
+                                    transform: 'translateY(-1px)',
+                                        boxShadow: '0 4px 15px rgba(55, 55, 55, 0.2)'
+                                },
+                                px: { xs: 3, md: 4 },
+                                py: { xs: 2, md: 2.5 },
+                                fontSize: { xs: '1rem', md: '1.1rem' },
+                                minWidth: { xs: '100%', sm: '250px' },
+                                maxWidth: { xs: '300px', sm: 'none' },
+                                fontFamily: 'Open Sans, sans-serif',
+                                fontWeight: 600,
+                                minHeight: 48,
+                                borderRadius: 3,
+                                transition: 'all 0.3s ease',
+                                textTransform: 'none'
+                            }}
+                        >
+                            View Dessert Drinks
                         </Button>   
                     </Box>
                 </Box>
@@ -248,7 +306,7 @@ export default function PaneVino() {
                             fontSize: { xs: '1.75rem', sm: '2rem', md: '2.25rem' }
                         }}
                     >
-                        Featured Drinks
+                        Featured Cocktails
                     </Typography>
                     
                     <Typography 
@@ -269,10 +327,10 @@ export default function PaneVino() {
                     {/* Slideshow Container */}
                     <Box sx={{ 
                         position: 'relative', 
-                        maxWidth: '600px', 
+                        maxWidth: '450px', 
                         height: { xs: '300px', sm: '400px', md: '450px' },
                         margin: '0 auto',
-                        borderRadius: 3,
+                        borderRadius: 3,    
                         overflow: 'hidden',
                         boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
                         border: '3px solid #f8f8f8'
@@ -287,8 +345,7 @@ export default function PaneVino() {
                                 left: 0,
                                 width: '100%',
                                 height: '100%',
-                                objectFit: isMobile ? 'contain' : 'cover',
-                                backgroundColor: '#f8f8f8',
+                                objectFit: 'cover',
                                 transition: 'opacity 0.5s ease-in-out',
                                 opacity: fade ? 1 : 0
                             }}
@@ -323,11 +380,8 @@ export default function PaneVino() {
                                 }
                             }}
                             onClick={() => {
-                                setFade(false);
-                                setTimeout(() => {
-                                    setCurrent((prev) => (prev - 1 + images.length) % images.length);
-                                    setFade(true);
-                                }, 500);
+                                const newIndex = (current - 1 + images.length) % images.length;
+                                handleImageChange(newIndex);
                             }}
                         >
                             <Typography sx={{ 
@@ -367,11 +421,8 @@ export default function PaneVino() {
                                 }
                             }}
                             onClick={() => {
-                                setFade(false);
-                                setTimeout(() => {
-                                    setCurrent((prev) => (prev + 1) % images.length);
-                                    setFade(true);
-                                }, 500);
+                                const newIndex = (current + 1) % images.length;
+                                handleImageChange(newIndex);
                             }}
                         >
                             <Typography sx={{ 
@@ -415,14 +466,39 @@ export default function PaneVino() {
                                         }
                                     }}
                                     onClick={() => {
-                                        setFade(false);
-                                        setTimeout(() => {
-                                            setCurrent(index);
-                                            setFade(true);
-                                        }, 500);
+                                        handleImageChange(index);
                                     }}
                                 />
                             ))}
+                        </Box>
+
+                        {/* Drink Name Overlay */}
+                        <Box sx={{
+                            position: 'absolute',
+                            top: { xs: 16, md: 20 },
+                            left: '50%',
+                            transform: 'translateX(-50%)',
+                            zIndex: 2,
+                            backgroundColor: 'rgba(0, 0, 0, 0.67)',
+                            backdropFilter: 'blur(5px)',
+                            borderRadius: 2,
+                            px: { xs: 2, md: 3 },
+                            py: { xs: 1, md: 1.5 },
+                            border: '0.5px solid rgba(255, 255, 255, 0.2)',
+                            transition: 'opacity 0.5s ease-in-out',
+                            opacity: fade ? 1 : 0
+                        }}>
+                            <Typography sx={{
+                                color: 'white',
+                                fontFamily: 'cursive',
+                                fontWeight: 50,
+                                fontSize: { xs: '0.8rem', md: '1.0rem' },
+                                textAlign: 'center',
+                                textShadow: '2px 2px 4px rgba(0,0,0,0.5)',
+                                letterSpacing: '0.5px'
+                            }}>
+                                {drinkNames[current]}
+                            </Typography>
                         </Box>
                     </Box>
                 </Box>

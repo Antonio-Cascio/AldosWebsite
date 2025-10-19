@@ -49,9 +49,9 @@ p {
 /* Main Button Styles */
 .button {
   background: linear-gradient(135deg, #cf2e2e 0%, #a02323 100%);
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   border: none;
-  padding: 16px 32px;
+  padding: 16px 32px; 
   border-radius: 50px;
   cursor: pointer;
   font-size: 16px;
@@ -63,7 +63,7 @@ p {
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; 
   display: inline-block;
   min-height: 44px;
   line-height: 1;
@@ -109,6 +109,27 @@ p {
   box-shadow: none;
 }
 
+.order-online-button {
+  background-color: #f4e6e6;
+  color: #cf2e2e;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 25px rgba(207, 46, 46, 0.3);
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  overflow: hidden; 
+  display: inline-block;
+  min-height: 44px;
+  line-height: 1;
+}
+
 /* Gift Card Button Styles */
 .GiftCardButton {
   background-color: transparent;
@@ -129,29 +150,6 @@ p {
 
 .GiftCardButton:active {
   transform: scale(1.02);
-}
-
-/* Review Area Styles */
-.reviewArea {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 32px;
-  color: #333;
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-  border: 1px solid #e9ecef;
-  padding: 28px;
-  border-radius: 16px;
-  width: 80%;
-  max-width: 600px;
-  margin: 0 auto 32px auto;
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: 500;
-  text-transform: none;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -301,46 +299,7 @@ p {
   }
 }
 
-/* Small screens (576px to 767px) */
-@media (max-width: 767px) and (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-  
-  .button {
-    padding: 12px 24px;
-    font-size: 14px;
-    min-height: 48px;
-  }
-  
-  .reviewArea {
-    width: 90%;
-    padding: 20px;
-    font-size: 1rem;
-  }
-  
-  .deleteButton, .editButton {
-    width: 40px;
-    height: 40px;
-    min-height: 48px;
-    min-width: 48px;
-  }
-  
-  .newReviewButton {
-    margin: 20px auto;
-    padding: 12px 24px;
-    font-size: 14px;
-    min-height: 48px;
-  }
-  
-  .card {
-    padding: 20px;
-  }
-  
-  .section {
-    padding: 40px 0;
-  }
-}
+
 
 /* Extra small screens (up to 575px) */
 @media (max-width: 575px) {
@@ -357,38 +316,6 @@ p {
     max-width: 280px;
   }
   
-  .reviewArea {
-    width: 95%;
-    padding: 16px;
-    font-size: 0.95rem;
-    margin: 0 auto 20px auto;
-  }
-  
-  .deleteButton, .editButton {
-    width: 44px;
-    height: 44px;
-    min-height: 48px;
-    min-width: 48px;
-    margin: 8px;
-  }
-  
-  .newReviewButton {
-    margin: 15px auto;
-    padding: 12px 20px;
-    font-size: 14px;
-    min-height: 48px;
-    width: 100%;
-    max-width: 280px;
-  }
-  
-  .card {
-    padding: 16px;
-    margin: 10px 0;
-  }
-  
-  .section {
-    padding: 30px 0;
-  }
   
   /* Typography adjustments for mobile */
   h1 {
@@ -497,4 +424,29 @@ html {
 ::selection {
   background-color: rgba(207, 46, 46, 0.2);
   color: #333;
+}
+
+.giftCardButton {
+  display: inline-block;
+  background: linear-gradient(135deg, #cf2e2e 0%, #a02323 100%);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(207, 46, 46, 0.4);
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.giftCardButton:hover {
+  background: linear-gradient(135deg, #a02323 0%, #8a1e1e 100%);
+  box-shadow: 0 12px 35px rgba(207, 46, 46, 0.4);
+  transform: translateY(-2px);
+}
+
+.giftCardButton:active {
+  transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(207, 46, 46, 0.3);
 }

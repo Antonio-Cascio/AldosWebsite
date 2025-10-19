@@ -20,8 +20,8 @@ export default function Navbar() {
     { text: 'Menu', path: '/menu' },
     { text: 'About', path: '/about' },
     { text: 'Events', path: '/events' },
-    { text: 'Pane & Vino', path: '/PaneVino' },
-    { text: 'Gift Cards', path: '/gift-cards' },
+    { text: 'Our Bar', path: '/PaneVino' },
+    { text: 'Gift Cards', path: '/GiftCards' },
   ];
 
   const drawer = (
@@ -57,6 +57,35 @@ export default function Navbar() {
             />
           </ListItem>
         ))}
+        <ListItem 
+          button 
+          component="a"
+          href="https://direct.chownow.com/order/40253/locations/61137"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={handleDrawerToggle}
+          sx={{
+            minHeight: 56,
+            mx: 2,
+            borderRadius: 2,
+            mb: 1,
+            '&:hover': {
+              backgroundColor: 'rgba(207, 46, 46, 0.1)',
+              transform: 'translateX(8px)',
+            },
+            transition: 'all 0.3s ease'
+          }}
+        >
+          <ListItemText 
+            primary="Order Online" 
+            sx={{ 
+              color: '#cf2e2e',
+              fontFamily: 'Open Sans, sans-serif',
+              fontWeight: 600,
+              fontSize: '1.1rem'
+            }}
+          />
+        </ListItem>
       </List>
     </Box>
   );
@@ -101,7 +130,10 @@ export default function Navbar() {
         {/* Center Section - Navigation */}
         <Box sx={{
           display: 'flex',
-          gap: 1
+          gap: { xs: 0.5, sm: 0.75, md: 1 },
+          flexWrap: { xs: 'wrap', sm: 'nowrap' },
+          justifyContent: 'center',
+          alignItems: 'center'
         }}>
           {menuItems.map((item) => (
             <Button 
@@ -114,9 +146,12 @@ export default function Navbar() {
                 minWidth: 48,
                 fontFamily: 'Open Sans, sans-serif',
                 fontWeight: 600,
-                fontSize: '0.95rem',
-                px: 2,
+                fontSize: { xs: '0.8rem', sm: '0.9rem', md: '0.95rem' },
+                px: { xs: 1, sm: 1.5, md: 2 },
                 borderRadius: 2,
+                whiteSpace: 'nowrap',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
                 '&:hover': {
                   backgroundColor: 'rgba(255, 255, 255, 0.15)',
                   transform: 'translateY(-2px)',
@@ -127,6 +162,32 @@ export default function Navbar() {
               {item.text}
             </Button>
           ))}
+          <Button 
+            color="inherit" 
+            href="https://direct.chownow.com/order/40253/locations/61137" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            sx={{
+              minHeight: 48,
+              minWidth: 48,
+              fontFamily: 'Open Sans, sans-serif',
+              fontWeight: 600,
+              fontSize: { xs: '0.8rem', sm: '0.9rem', md: '0.95rem' },
+              px: { xs: 1, sm: 1.5, md: 2 },
+              borderRadius: 2,
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              maxWidth: { xs: '100px', sm: '120px', md: 'none' },
+              '&:hover': {
+                backgroundColor: 'rgba(255, 255, 255, 0.15)',
+                transform: 'translateY(-2px)',
+              },
+              transition: 'all 0.3s ease'
+            }}
+          >
+            Order Online
+          </Button>
         </Box>
 
         {/* Right Section - Aldorks Image */}
