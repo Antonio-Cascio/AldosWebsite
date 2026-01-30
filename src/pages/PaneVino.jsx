@@ -56,7 +56,7 @@ export default function PaneVino() {
                             mb: { xs: 3, md: 4 },
                             color: '#cf2e2e',
                             fontFamily: 'cursive',
-                            fontWeight: 500,
+                            fontWeight: "bold",
                             fontSize: { xs: '2.5rem', sm: '3rem', md: '3.5rem' },
                             textShadow: '2px 2px 4px rgba(0,0,0,0.1)'
                         }}

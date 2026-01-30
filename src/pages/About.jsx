@@ -15,7 +15,7 @@ export default function About() {
                         variant="h1" 
                         sx={{ 
                             fontSize: { xs: '2.5rem', md: '4rem' },
-                            fontWeight: 500,
+                            fontWeight: "bold",
                             color: '#cf2e2e',
                             mb: 3,
                             textShadow: '2px 2px 4px rgba(0,0,0,0.1)',

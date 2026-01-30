@@ -27,7 +27,7 @@ export default function Menu() {
               mb: { xs: 3, md: 4 },
               color: '#cf2e2e',
               fontFamily: 'cursive',
-              fontWeight: 500,
+              fontWeight: "bold",
               fontSize: { xs: '2.5rem', sm: '3rem', md: '3.5rem' },
               textShadow: '2px 2px 4px rgba(0,0,0,0.1)'
             }}
@@ -311,7 +311,7 @@ export default function Menu() {
                   textAlign: 'center', 
                   mb: { xs: 3, md: 4 },
                   color: '#cf2e2e',  
-                  fontWeight: 500,
+                  fontWeight: "500",
                   fontFamily: 'Georgia, Times New Roman, Times, serif',
                   fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' }
                 }}

@@ -57,7 +57,7 @@ export default function Home() {
               mb: { xs: 3, md: 4 },
               color: '#cf2e2e',
               fontFamily: 'cursive',
-              fontWeight: 500,
+              fontWeight: "bold",
               fontSize: { xs: '2.5rem', sm: '3rem', md: '3.5rem' },
               lineHeight: { xs: 1.2, md: 1.1 },
               textShadow: '2px 2px 4px rgba(0,0,0,0.1)'
@@ -86,7 +86,7 @@ export default function Home() {
               fontWeight: 400
             }}
           >
-            For the perfect dining experience, treat your family like you are right at home, with our homemade pasta and the finest Italian cuisine, Aldo's restaurant is the perfect choice.
+            For the perfect dining experience, make your family feel right at home. With our homemade pasta and the finest Italian cuisine, Aldo’s is the perfect choice.
           </Typography>
         </Box>
         

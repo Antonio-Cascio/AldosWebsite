@@ -23,7 +23,7 @@ export default function GiftCards() {
         }}>
           <Typography variant="h1" sx={{ 
             color: '#cf2e2e', 
-            fontWeight: 500,
+            fontWeight: "bold",
             fontFamily: 'cursive',
             fontSize: { xs: '2.5rem', sm: '3.5rem', md: '4rem' },
             mb: 2,
