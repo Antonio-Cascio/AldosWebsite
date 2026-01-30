@@ -56,8 +56,8 @@ export default function Home() {
             sx={{ 
               mb: { xs: 3, md: 4 },
               color: '#cf2e2e',
-              fontFamily: 'Playfair Display, serif',
-              fontWeight: 'bold',
+              fontFamily: 'cursive',
+              fontWeight: 500,
               fontSize: { xs: '2.5rem', sm: '3rem', md: '3.5rem' },
               lineHeight: { xs: 1.2, md: 1.1 },
               textShadow: '2px 2px 4px rgba(0,0,0,0.1)'
@@ -79,7 +79,7 @@ export default function Home() {
               color: '#666',
               maxWidth: '800px',
               margin: '0 auto',
-              fontFamily: 'Open Sans, sans-serif',
+              fontFamily: 'Georgia, Times New Roman, Times, serif',
               fontSize: { xs: '1.1rem', sm: '1.25rem', md: '1.4rem' },
               lineHeight: { xs: 1.6, md: 1.7 },
               px: { xs: 2, md: 0 },

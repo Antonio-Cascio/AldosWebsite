@@ -55,8 +55,8 @@ function WineList() {
           textAlign: 'center', 
           mb: { xs: 2, md: 4 },
           color: '#cf2e2e',
-          fontFamily: 'Playfair Display, serif',
-          fontWeight: 'bold',
+          fontFamily: 'Georgia, Times New Roman, Times, serif',
+          fontWeight: 500,
           fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' }
         }}
       >
@@ -71,7 +71,7 @@ function WineList() {
           color: '#666',
           maxWidth: '800px',
           margin: '0 auto',
-          fontFamily: 'Open Sans, sans-serif',
+          fontFamily: 'Georgia, Times New Roman, Times, serif',
           fontSize: { xs: '1rem', sm: '1.1rem', md: '1.25rem' },
           px: { xs: 2, md: 0 }
         }}

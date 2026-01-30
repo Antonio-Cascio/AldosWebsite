@@ -44,9 +44,9 @@ function EventDinner() {
                     textAlign: 'center', 
                     mb: 4, 
                     color: '#cf2e2e', 
-                    fontWeight: 'bold',
+                    fontWeight: 500,
                     fontSize: { xs: '2.5rem', md: '3.5rem' },
-                    fontFamily: 'Playfair Display, serif'
+                    fontFamily: 'Georgia, Times New Roman, Times, serif'
                 }}
             >
                 Dinner Event Menus
@@ -61,7 +61,7 @@ function EventDinner() {
                     maxWidth: '800px', 
                     margin: '0 auto 2rem auto',
                     fontSize: { xs: '1.1rem', md: '1.3rem' },
-                    fontFamily: 'Open Sans, sans-serif'
+                    fontFamily: 'Georgia, Times New Roman, Times, serif'
                 }}
             >
                 Please contact us at 201-891-2618 to reserve your event.

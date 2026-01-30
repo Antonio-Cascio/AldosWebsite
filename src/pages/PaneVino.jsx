@@ -55,8 +55,8 @@ export default function PaneVino() {
                         sx={{ 
                             mb: { xs: 3, md: 4 },
                             color: '#cf2e2e',
-                            fontFamily: 'Playfair Display, serif',
-                            fontWeight: 'bold',
+                            fontFamily: 'cursive',
+                            fontWeight: 500,
                             fontSize: { xs: '2.5rem', sm: '3rem', md: '3.5rem' },
                             textShadow: '2px 2px 4px rgba(0,0,0,0.1)'
                         }}
@@ -76,7 +76,7 @@ export default function PaneVino() {
                         sx={{ 
                             mb: 3,
                             color: '#666',
-                            fontFamily: 'Open Sans, sans-serif',
+                            fontFamily: 'Georgia, Times New Roman, Times, serif',
                             fontSize: { xs: '1.1rem', md: '1.3rem' },
                             lineHeight: 1.6,
                             maxWidth: '800px',
@@ -103,7 +103,7 @@ export default function PaneVino() {
                         variant="h3" 
                         sx={{ 
                             color: '#cf2e2e',
-                            fontFamily: 'Playfair Display, serif',
+                            fontFamily: 'Georgia, Times New Roman, Times, serif',
                             fontWeight: 600,
                             fontSize: { xs: '1.2rem', md: '1.4rem' },
                             mb: 4

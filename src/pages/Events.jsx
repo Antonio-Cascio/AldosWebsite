@@ -22,8 +22,8 @@ export default function Events() {
                 }}>
                     <Typography variant="h1" sx={{ 
                         color: '#cf2e2e', 
-                        fontWeight: 700,
-                        fontFamily: 'Playfair Display, serif',
+                        fontWeight: 500,
+                        fontFamily: 'cursive',
                         fontSize: { xs: '2.5rem', sm: '3.5rem', md: '4rem' },
                         mb: 2,
                         textShadow: '2px 2px 4px rgba(0,0,0,0.1)',
@@ -45,7 +45,7 @@ export default function Events() {
                         color: '#555', 
                         maxWidth: '900px', 
                         margin: '0 auto',
-                        fontFamily: 'Open Sans, sans-serif',
+                        fontFamily: 'Georgia, Times New Roman, Times, serif',
                         fontSize: { xs: '1.1rem', sm: '1.3rem', md: '1.4rem' },
                         lineHeight: 1.6,
                         fontWeight: 400,
@@ -90,7 +90,7 @@ export default function Events() {
                             textAlign: 'center'
                         }}>
                             <Typography variant="h4" sx={{ 
-                                fontFamily: 'Playfair Display, serif', 
+                                fontFamily: 'Georgia, Times New Roman, Times, serif', 
                                 fontWeight: 600,
                                 fontSize: { xs: '1.4rem', md: '1.6rem' },
                                 mb: 1,
@@ -99,7 +99,7 @@ export default function Events() {
                                 Wine Cellar
                             </Typography>
                             <Typography variant="body2" sx={{
-                                fontFamily: 'Open Sans, sans-serif',
+                                fontFamily: 'Georgia, Times New Roman, Times, serif',
                                 opacity: 0.9,
                                 fontSize: '0.9rem'
                             }}>
@@ -165,7 +165,7 @@ export default function Events() {
                             {/* Room Description */}
                             <Box sx={{ mt: 3, p: 2, background: '#f8f9fa', borderRadius: 2 }}>
                                 <Typography variant="body1" sx={{
-                                    fontFamily: 'Open Sans, sans-serif',
+                                    fontFamily: 'Georgia, Times New Roman, Times, serif',
                                     color: '#555',
                                     fontSize: '0.95rem',
                                     lineHeight: 1.6,
@@ -201,7 +201,7 @@ export default function Events() {
                             textAlign: 'center'
                         }}>
                             <Typography variant="h4" sx={{ 
-                                fontFamily: 'Playfair Display, serif', 
+                                fontFamily: 'Georgia, Times New Roman, Times, serif', 
                                 fontWeight: 600,
                                 fontSize: { xs: '1.4rem', md: '1.6rem' },
                                 mb: 1,
@@ -210,7 +210,7 @@ export default function Events() {
                                 Downstairs Dining Room
                             </Typography>
                             <Typography variant="body2" sx={{
-                                fontFamily: 'Open Sans, sans-serif',
+                                fontFamily: 'Georgia, Times New Roman, Times, serif',
                                 opacity: 0.9,
                                 fontSize: '0.9rem'
                             }}>
@@ -276,10 +276,10 @@ export default function Events() {
                             {/* Room Description */}
                             <Box sx={{ mt: 3, p: 2, background: '#f8f9fa', borderRadius: 2 }}>
                                 <Typography variant="body1" sx={{
-                                    fontFamily: 'Open Sans, sans-serif',
+                                    fontFamily: 'Georgia, Times New Roman, Times, serif',
                                     color: '#555',
                                     fontSize: '0.95rem',
-                                    lineHeight: 1.6,
+                                    lineHeight: 1.6,    
                                     textAlign: 'center'
                                 }}>
                                     Our spacious downstairs dining room provides the perfect setting for larger gatherings, featuring sophisticated decor and flexible seating arrangements.
@@ -294,7 +294,7 @@ export default function Events() {
                     mb: 4
                 }}>
                     <Typography variant="h3" sx={{
-                        fontFamily: 'Playfair Display, serif',
+                        fontFamily: 'Georgia, Times New Roman, Times, serif',
                         color: '#cf2e2e',
                         fontSize: { xs: '1.8rem', md: '2.2rem' },
                         mb: 3,
@@ -334,7 +334,7 @@ export default function Events() {
                                 fontSize: { xs: '1rem', sm: '1.1rem', md: '1.2rem' },
                                 minWidth: { xs: '100%', sm: '280px' },
                                 maxWidth: { xs: '350px', sm: 'none' },
-                                fontFamily: 'Open Sans, sans-serif',
+                                fontFamily: 'Georgia, Times New Roman, Times, serif',
                                 fontWeight: 600,
                                 minHeight: 56,
                                 borderRadius: 3,
@@ -368,7 +368,7 @@ export default function Events() {
                                 fontSize: { xs: '1rem', sm: '1.1rem', md: '1.2rem' },
                                 minWidth: { xs: '100%', sm: '280px' },
                                 maxWidth: { xs: '350px', sm: 'none' },
-                                fontFamily: 'Open Sans, sans-serif',
+                                fontFamily: 'Georgia, Times New Roman, Times, serif',
                                 fontWeight: 600,
                                 minHeight: 56,
                                 borderRadius: 3,

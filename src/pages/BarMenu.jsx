@@ -43,8 +43,8 @@ export default function BarMenu() {
                     textAlign: 'center', 
                     mb: 4, 
                     color: '#cf2e2e', 
-                    fontWeight: 'bold',
-                    fontFamily: 'Open Sans, sans-serif',
+                    fontWeight: 500,
+                    fontFamily: 'Georgia, Times New Roman, Times, serif',
                     fontSize: { xs: '2.5rem', md: '3.5rem' }
                 }}
             >
@@ -60,7 +60,7 @@ export default function BarMenu() {
                     maxWidth: '800px', 
                     margin: '0 auto 2rem auto',
                     fontSize: { xs: '1.1rem', md: '1.3rem' },
-                    fontFamily: 'Open Sans, sans-serif',
+                    fontFamily: 'Georgia, Times New Roman, Times, serif',
                 }}
             >
                 Explore our selection of premium spirits and beverages

@@ -15,11 +15,11 @@ export default function About() {
                         variant="h1" 
                         sx={{ 
                             fontSize: { xs: '2.5rem', md: '4rem' },
-                            fontWeight: 700,
+                            fontWeight: 500,
                             color: '#cf2e2e',
                             mb: 3,
                             textShadow: '2px 2px 4px rgba(0,0,0,0.1)',
-                            fontFamily: 'Playfair Display, serif'
+                            fontFamily: 'cursive'
                         }}
                     >
                         About Aldo's
@@ -39,7 +39,7 @@ export default function About() {
                             maxWidth: '800px',
                             margin: '0 auto',
                             lineHeight: 1.8,
-                            fontFamily: 'Open Sans, sans-serif',
+                            fontFamily: 'Georgia, Times New Roman, Times, serif',
                             fontWeight: 400
                         }}
                     >
@@ -80,7 +80,7 @@ export default function About() {
                                         fontSize: '1.1rem',
                                         lineHeight: 1.8,
                                         color: '#333',
-                                        fontFamily: 'Open Sans, sans-serif'
+                                        fontFamily: 'Georgia, Times New Roman, Times, serif'
                                     }}
                                 >
                                     For More Than 40 years, Aldo's Italian Restaurant has supplied his customers with high quality food, great service and good prices.
@@ -92,7 +92,7 @@ export default function About() {
                                         fontSize: '1.1rem',
                                         lineHeight: 1.8,
                                         color: '#333',
-                                        fontFamily: 'Open Sans, sans-serif'
+                                        fontFamily: 'Georgia, Times New Roman, Times, serif'
                                     }}
                                 >
                                     Open 7 Days a week, this newer location will provide a wonderful space for family dining or special intimate gatherings, featuring 3 separate dining rooms plus an outdoor patio, and private dining rooms.
@@ -133,7 +133,7 @@ export default function About() {
                                         fontSize: '1.1rem',
                                         lineHeight: 1.8,
                                         color: '#333',
-                                        fontFamily: 'Open Sans, sans-serif'
+                                        fontFamily: 'Georgia, Times New Roman, Times, serif'
                                     }}
                                 >
                                     As one of our new additions, customers will be delighted with a well prepared and fresh Brick Oven Pizza.
@@ -145,7 +145,7 @@ export default function About() {
                                         fontSize: '1.1rem',
                                         lineHeight: 1.8,
                                         color: '#333',
-                                        fontFamily: 'Open Sans, sans-serif'
+                                        fontFamily: 'Georgia, Times New Roman, Times, serif'
                                     }}
                                 >
                                     Under the same roof you'll find Pane & Vino Wine Bar, a welcoming full bar and liquor store where patrons will enjoy great food and an extensive selection of wine and drinks. Customers may purchase at retail prices and enjoy at Aldo's Restaurant or you may bring your own.
@@ -184,9 +184,9 @@ export default function About() {
                                 variant="h3" 
                                 sx={{ 
                                     mb: 4,
-                                    fontFamily: 'Playfair Display, serif',
-                                    fontWeight: 700,
-                                    textShadow: '2px 2px 4px rgba(0,0,0,0.3)'
+                                    fontFamily: 'cursive',
+                                    textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
+                                    fontWeight: 200
                                 }}
                             >
                                 A Message from Aldo
@@ -197,7 +197,7 @@ export default function About() {
                                     mb: 4,
                                     fontSize: '1.2rem',
                                     lineHeight: 1.8,
-                                    fontFamily: 'Open Sans, sans-serif',
+                                    fontFamily: 'Georgia, Times New Roman, Times, serif',
                                     fontWeight: 400,
                                     maxWidth: '800px',
                                     margin: '0 auto'
