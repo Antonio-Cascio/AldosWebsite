@@ -129,33 +129,6 @@ export default function Menu() {
               Dinner Menu
             </Button>
             <Button
-              variant={activeMenu === 'takeout' ? 'contained' : 'outlined'}
-              size="large"
-              onClick={() => setActiveMenu('takeout')}
-              startIcon={<DinnerDining />}
-              sx={{
-                bgcolor: activeMenu === 'takeout' ? '#cf2e2e' : 'transparent',
-                color: activeMenu === 'takeout' ? 'white' : '#cf2e2e',
-                borderColor: '#cf2e2e',
-                '&:hover': {
-                  bgcolor: activeMenu === 'takeout' ? '#a02323' : 'rgba(207, 46, 46, 0.1)',
-                  transform: 'translateY(-2px)',
-                  boxShadow: activeMenu === 'takeout' ? '0 8px 25px rgba(207, 46, 46, 0.3)' : '0 4px 15px rgba(207, 46, 46, 0.2)'
-                },
-                px: { xs: 3, md: 4 },
-                py: { xs: 2, md: 2 },
-                fontSize: { xs: '0.95rem', sm: '1rem', md: '1.1rem' },
-                minWidth: { xs: '100%', sm: '200px' },
-                fontFamily: 'Open Sans, sans-serif',
-                minHeight: 48,
-                borderRadius: 3,
-                transition: 'all 0.3s ease',
-                fontWeight: 600
-              }}
-            >
-              Family-Style Menu
-            </Button>
-            <Button
               variant={activeMenu === 'dessert' ? 'contained' : 'outlined'}
               size="large"
               onClick={() => setActiveMenu('dessert')}
@@ -181,6 +154,33 @@ export default function Menu() {
               }}
             >
               Dessert Menu
+            </Button>
+            <Button
+              variant={activeMenu === 'takeout' ? 'contained' : 'outlined'}
+              size="large"
+              onClick={() => setActiveMenu('takeout')}
+              startIcon={<DinnerDining />}
+              sx={{
+                bgcolor: activeMenu === 'takeout' ? '#cf2e2e' : 'transparent',
+                color: activeMenu === 'takeout' ? 'white' : '#cf2e2e',
+                borderColor: '#cf2e2e',
+                '&:hover': {
+                  bgcolor: activeMenu === 'takeout' ? '#a02323' : 'rgba(207, 46, 46, 0.1)',
+                  transform: 'translateY(-2px)',
+                  boxShadow: activeMenu === 'takeout' ? '0 8px 25px rgba(207, 46, 46, 0.3)' : '0 4px 15px rgba(207, 46, 46, 0.2)'
+                },
+                px: { xs: 3, md: 4 },
+                py: { xs: 2, md: 2 },
+                fontSize: { xs: '0.95rem', sm: '1rem', md: '1.1rem' },
+                minWidth: { xs: '100%', sm: '200px' },
+                fontFamily: 'Open Sans, sans-serif',
+                minHeight: 48,
+                borderRadius: 3,
+                transition: 'all 0.3s ease',
+                fontWeight: 600
+              }}
+            >
+              Family-Style Menu
             </Button>
           </Box>
         </Box>
