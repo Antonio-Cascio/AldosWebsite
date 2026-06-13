@@ -21,7 +21,6 @@ export default function Navbar() {
     { text: 'About', path: '/about' },
     { text: 'Events', path: '/events' },
     { text: 'Our Bar', path: '/PaneVino' },
-    { text: 'Gift Cards', path: '/GiftCards' },
   ];
 
   const drawer = (

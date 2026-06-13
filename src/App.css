@@ -130,30 +130,6 @@ p {
   line-height: 1;
 }
 
-/* Gift Card Button Styles */
-.GiftCardButton {
-  background-color: transparent;
-  border: none;
-  margin: 8px;
-  min-height: 44px;
-  min-width: 44px;
-  transition: all 0.3s ease;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.GiftCardButton:hover {
-  background-color: rgba(207, 46, 46, 0.1);
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-.GiftCardButton:active {
-  transform: scale(1.02);
-}
-
-
-
 /* Card Styles */
 .card {
   background: white;
@@ -355,7 +331,6 @@ p {
   .deleteButton:hover,
   .editButton:hover,
   .newReviewButton:hover,
-  .GiftCardButton:hover,
   .reviewArea:hover,
   .card:hover {
     transform: none;
@@ -365,8 +340,7 @@ p {
   .button:active,
   .deleteButton:active,
   .editButton:active,
-  .newReviewButton:active,
-  .GiftCardButton:active {
+  .newReviewButton:active {
     transform: scale(0.98);
   }
 }
@@ -424,29 +398,4 @@ html {
 ::selection {
   background-color: rgba(207, 46, 46, 0.2);
   color: #333;
-}
-
-.giftCardButton {
-  display: inline-block;
-  background: linear-gradient(135deg, #cf2e2e 0%, #a02323 100%);
-  color: white;
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(207, 46, 46, 0.4);
-  transition: all 0.3s ease;
-  letter-spacing: 0.5px;
-}
-
-.giftCardButton:hover {
-  background: linear-gradient(135deg, #a02323 0%, #8a1e1e 100%);
-  box-shadow: 0 12px 35px rgba(207, 46, 46, 0.4);
-  transform: translateY(-2px);
-}
-
-.giftCardButton:active {
-  transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(207, 46, 46, 0.3);
 }

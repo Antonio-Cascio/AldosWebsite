@@ -43,7 +43,7 @@ export default function DessertDrinks() {
                     textAlign: 'center', 
                     mb: 4, 
                     color: '#cf2e2e', 
-                    fontWeight: 500,
+                    fontWeight: "bold",
                     fontFamily: 'Georgia, Times New Roman, Times, serif',
                     fontSize: { xs: '2.5rem', md: '3.5rem' }
                 }}

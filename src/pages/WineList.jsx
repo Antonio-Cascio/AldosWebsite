@@ -56,7 +56,7 @@ function WineList() {
           mb: { xs: 2, md: 4 },
           color: '#cf2e2e',
           fontFamily: 'Georgia, Times New Roman, Times, serif',
-          fontWeight: 500,
+          fontWeight: "bold",
           fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' }
         }}
       >
@@ -145,7 +145,7 @@ function WineList() {
           <Typography sx={{ 
             color: 'white', 
             fontSize: { xs: '1.25rem', md: '1.5rem' }, 
-            fontWeight: 'bold' 
+            fontWeight: 500 
           }}>
             ‹
           </Typography>
@@ -188,7 +188,7 @@ function WineList() {
           <Typography sx={{ 
             color: 'white', 
             fontSize: { xs: '1.25rem', md: '1.5rem' }, 
-            fontWeight: 'bold' 
+            fontWeight: "bold" 
           }}>
             ›
           </Typography>
